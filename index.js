@@ -72,7 +72,7 @@ class Fontsy {
     }).join('\n')
   }
 
-  get() {
+  list() {
     return this.result.map(item => {
       const bracket = {}
 
