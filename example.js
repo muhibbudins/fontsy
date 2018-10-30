@@ -4,7 +4,7 @@
   const fonts = await new Fontsy()
     .sort('alpha')
     .font({
-      'Roboto': ['300', '500 italic'],
+      'Playfair Display': ['300', '500 italic'],
       'Quicksand': ['300', '600']
     })
   

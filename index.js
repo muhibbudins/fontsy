@@ -50,7 +50,7 @@ class Fontsy {
     apiUrl.push('https://fonts.googleapis.com/css?family=')
     
     this.fonts.map((item, index) => {
-      fontVariant.push(`${item}:${this.variant[index]}`)
+      fontVariant.push(`${item.replace(/ /g, '+')}:${this.variant[index]}`)
     })
 
     apiUrl.push(fontVariant.join('|'))

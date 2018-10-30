@@ -27,7 +27,7 @@ Next, create your Fontsy instance :
   const fonts = await new Fontsy()
     .sort('alpha') // default Popularity
     .font({
-      'Roboto': ['300', '500 italic'],
+      'Playfair Display': ['300', '500 italic'],
       'Quicksand': ['300', '600']
     })
 })()
@@ -40,7 +40,7 @@ And then, follow below instruction to show fetching data.
 Use **fonts.link()** to get single css link to Google Fonts
 
 ```
-https://fonts.googleapis.com/css?family=Roboto:300,500i|Quicksand:300,600"
+https://fonts.googleapis.com/css?family=Playfair+Display:300,500i|Quicksand:300,600"
 ```
 
 ### Get Single Link With Tag
@@ -48,7 +48,7 @@ https://fonts.googleapis.com/css?family=Roboto:300,500i|Quicksand:300,600"
 Use **fonts.link(true)** to get single css link to Google Fonts with HTML tag
 
 ```html
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,500i|Quicksand:300,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:300,500i|Quicksand:300,600" rel="stylesheet">
 ```
 
 ### Get CSS Class
@@ -59,8 +59,8 @@ Use **fonts.css()** to get css class from instance
 .font-quicksand {
   font-family: 'Quicksand', sans-serif;
 }
-.font-roboto {
-  font-family: 'Roboto', sans-serif;
+.font-playfair-display {
+  font-family: 'Playfair Display', serif;
 }
 ```
 
@@ -81,17 +81,11 @@ Use **fonts.list()** to get list of fetched fonts
     ]
   },
   {
-    "family": "Roboto",
-    "category": "sans-serif",
+    "family": "Playfair Display",
+    "category": "serif",
     "variants": [
-      "100",
-      "100italic",
-      "300",
-      "300italic",
       "regular",
       "italic",
-      "500",
-      "500italic",
       "700",
       "700italic",
       "900",
@@ -111,9 +105,11 @@ Just print variable **fonts** to show instance of Fontsy
   "key": "YOUR-API-KEY",
   "sorted": "alpha",
   "fonts": [
-    "Roboto",
-    "Quicksand"  ],
-  "variant": [    "300,500i",
+    "Playfair Display",
+    "Quicksand" 
+  ],
+  "variant": [
+    "300,500i",
     "300,600"
   ],
   "result": [
