@@ -48,7 +48,7 @@ https://fonts.googleapis.com/css?family=Roboto:300,500i|Quicksand:300,600"
 Use **fonts.link(true)** to get single css link to Google Fonts with HTML tag
 
 ```html
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,500i|Quicksand:300,600"rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,500i|Quicksand:300,600" rel="stylesheet">
 ```
 
 ### Get CSS Class
