@@ -2,11 +2,11 @@
 
 Google Fonts wrapper for your NodeJS App
 
-### Requirement
+## Requirement
 
 This library require Google API Key to run, so you must be GET your own API Key on [this page](https://developers.google.com/fonts/docs/developer_api). After that, rename **.env.example** file to **.env** and insert your API Key to this file.
 
-### Usage
+## Usage
 
 First, create your Fontsy instance using below code :
 
@@ -25,7 +25,7 @@ First, create your Fontsy instance using below code :
 
 And then, follow below instruction to show fetching data.
 
-#### Get single link
+### Get single link
 
 Use **fonts.link()** to get single css link to Google Fonts
 
@@ -33,7 +33,7 @@ Use **fonts.link()** to get single css link to Google Fonts
 https://fonts.googleapis.com/css?family=Roboto:300,500i|Quicksand:300,600"
 ```
 
-#### Get single link with tag
+### Get single link with tag
 
 Use **fonts.link(true)** to get single css link to Google Fonts with HTML tag
 
@@ -41,7 +41,7 @@ Use **fonts.link(true)** to get single css link to Google Fonts with HTML tag
 <link href=\"https://fonts.googleapis.com/css?family=Roboto:300,500i|Quicksand:300,600\"rel=\"stylesheet\">
 ```
 
-#### Get css class
+### Get css class
 
 Use **fonts.css()** to get css class from instance
 
@@ -54,7 +54,7 @@ Use **fonts.css()** to get css class from instance
 }
 ```
 
-#### Get list of Fonts
+### Get list of Fonts
 
 Use **fonts.list()** to get list of fetched fonts
 
@@ -91,7 +91,7 @@ Use **fonts.list()** to get list of fetched fonts
 ]
 ```
 
-#### Get instance
+### Get instance
 
 Just print variable **fonts** to show instance of Fontsy
 
@@ -138,6 +138,6 @@ Just print variable **fonts** to show instance of Fontsy
 
 More info see [example file](example.js)
 
-### License
+## License
 
 This project under MIT License
