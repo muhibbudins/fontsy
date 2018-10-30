@@ -71,6 +71,18 @@ class Fontsy {
       `.trim().replace(/        /g, '')
     }).join('\n')
   }
+
+  get() {
+    return this.result.map(item => {
+      const bracket = {}
+
+      bracket['family'] = item['family']
+      bracket['category'] = item['category']
+      bracket['variants'] = item['variants']
+
+      return bracket
+    })
+  }
 }
 
 module.exports = Fontsy

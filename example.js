@@ -12,4 +12,5 @@
   console.log(fonts.link())
   console.log(fonts.link(true))
   console.log(fonts.css())
+  console.log(fonts.get())
 })()
