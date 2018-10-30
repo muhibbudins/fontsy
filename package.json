@@ -1,0 +1,16 @@
+{
+  "name": "fontsy",
+  "version": "1.0.0",
+  "description": "Google fonts wrapper for NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node --presets env,stage-2 index.js"
+  },
+  "author": "Muhibbudin Suretno <muhibbudinsuretno1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}
