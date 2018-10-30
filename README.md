@@ -8,7 +8,17 @@ This library require Google API Key to run, so you must be GET your own API Key 
 
 ## Usage
 
-First, create your Fontsy instance using below code :
+First, install Fontsy using below code :
+
+``` bash
+npm install fontsy
+
+# Or
+
+yarn add fontsy
+```
+
+Next, create your Fontsy instance :
 
 ```js
 (async () => {
