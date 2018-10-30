@@ -7,6 +7,7 @@ class Fontsy {
     this.url = 'https://www.googleapis.com/webfonts/v1/webfonts'
     this.key = config['API_KEY']
     this.sorted = 'popularity'
+    this.fonts = []
   }
 
   endpoint() {
@@ -19,12 +20,14 @@ class Fontsy {
   }
 
   async font(query) {
-    this.fonts = Object.keys(query)
-    this.variant = this.fonts.map(item => {
-      return query[item].map(item => {
-        return item.toLowerCase().replace(/ /g, '').replace(/italic/g, 'i')
-      }).join(',')
-    })
+    if (query) {
+      this.fonts = Object.keys(query)
+      this.variant = this.fonts.map(item => {
+        return query[item].map(item => {
+          return item.toLowerCase().replace(/ /g, '').replace(/italic/g, 'i')
+        }).join(',')
+      })
+    }
 
     this.result = await this.fetch()
 
@@ -37,7 +40,11 @@ class Fontsy {
         .then(res => res.json())
         .then(res => {
           resolve(res['items'].filter(item => {
-            return this.fonts.indexOf(item['family']) > -1
+            if (this.fonts.length > 0) {
+              return this.fonts.indexOf(item['family']) > -1
+            }
+            
+            return item
           }))
         })
     })
