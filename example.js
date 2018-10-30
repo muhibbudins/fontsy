@@ -8,9 +8,9 @@
       'Quicksand': ['300', '600']
     })
   
-  console.log(fonts)
-  console.log(fonts.link())
-  console.log(fonts.link(true))
-  console.log(fonts.css())
-  console.log(fonts.list())
+  console.log(JSON.stringify(fonts, false, 2))
+  console.log(JSON.stringify(fonts.link(), false, 2))
+  console.log(JSON.stringify(fonts.link(true), false, 2))
+  console.log(JSON.stringify(fonts.css(), false, 2))
+  console.log(JSON.stringify(fonts.list(), false, 2))
 })()
