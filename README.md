@@ -136,7 +136,7 @@ Just print variable **fonts** to show instance of Fontsy
 }
 ```
 
-More info see [example file](example.js)
+For more info see [example file](example.js)
 
 ## License
 

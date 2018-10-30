@@ -22,7 +22,7 @@ class Fontsy {
     this.fonts = Object.keys(query)
     this.variant = this.fonts.map(item => {
       return query[item].map(item => {
-        return item.replace(/ /g, '').replace('italic', 'i')
+        return item.toLowerCase().replace(/ /g, '').replace(/italic/g, 'i')
       }).join(',')
     })
 
