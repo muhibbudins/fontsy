@@ -1,6 +1,6 @@
 {
   "name": "fontsy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Google fonts wrapper for NodeJS",
   "main": "index.js",
   "scripts": {},
