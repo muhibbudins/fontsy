@@ -25,7 +25,7 @@ First, create your Fontsy instance using below code :
 
 And then, follow below instruction to show fetching data.
 
-### Get single link
+### Get Single Link
 
 Use **fonts.link()** to get single css link to Google Fonts
 
@@ -33,15 +33,15 @@ Use **fonts.link()** to get single css link to Google Fonts
 https://fonts.googleapis.com/css?family=Roboto:300,500i|Quicksand:300,600"
 ```
 
-### Get single link with tag
+### Get Single Link With Tag
 
 Use **fonts.link(true)** to get single css link to Google Fonts with HTML tag
 
 ```html
-<link href=\"https://fonts.googleapis.com/css?family=Roboto:300,500i|Quicksand:300,600\"rel=\"stylesheet\">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,500i|Quicksand:300,600"rel="stylesheet">
 ```
 
-### Get css class
+### Get CSS Class
 
 Use **fonts.css()** to get css class from instance
 
@@ -54,7 +54,7 @@ Use **fonts.css()** to get css class from instance
 }
 ```
 
-### Get list of Fonts
+### Get List Of Fonts
 
 Use **fonts.list()** to get list of fetched fonts
 
@@ -91,7 +91,7 @@ Use **fonts.list()** to get list of fetched fonts
 ]
 ```
 
-### Get instance
+### Get Instance
 
 Just print variable **fonts** to show instance of Fontsy
 
